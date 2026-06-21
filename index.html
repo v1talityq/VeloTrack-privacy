@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Политика конфиденциальности приложения VeloTrack">
+  <title>Политика конфиденциальности — VeloTrack</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f3f7f4;
+      --surface: #ffffff;
+      --text: #162019;
+      --muted: #5d6a61;
+      --green: #16a34a;
+      --green-soft: #dcfce7;
+      --line: #dce6de;
+      --shadow: 0 16px 40px rgba(18, 52, 31, .08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #07110b;
+        --surface: #101a13;
+        --text: #edf7ef;
+        --muted: #a6b5aa;
+        --green: #4ade80;
+        --green-soft: #123b21;
+        --line: #26372a;
+        --shadow: none;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main { width: min(880px, calc(100% - 28px)); margin: 28px auto 64px; }
+    .hero, section {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      padding: clamp(24px, 5vw, 48px);
+      background: linear-gradient(145deg, var(--green-soft), var(--surface));
+      margin-bottom: 16px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: var(--green);
+      color: #fff;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: .02em;
+    }
+    h1 { font-size: clamp(32px, 7vw, 54px); line-height: 1.08; margin: 18px 0 14px; }
+    h2 { font-size: 21px; line-height: 1.25; margin: 0 0 14px; }
+    h3 { font-size: 16px; margin: 0 0 4px; }
+    p { margin: 0 0 12px; }
+    .lead { max-width: 720px; color: var(--muted); font-size: 18px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .chip { padding: 7px 11px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); font-weight: 700; font-size: 13px; }
+    section { padding: 22px; margin-bottom: 12px; }
+    .section-title { display: flex; align-items: center; gap: 10px; }
+    .number { color: var(--green); font-weight: 900; font-size: 13px; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px; }
+    .item { padding: 14px; border-radius: 15px; background: var(--bg); border: 1px solid var(--line); }
+    ul { padding-left: 22px; margin: 8px 0 12px; }
+    a { color: var(--green); overflow-wrap: anywhere; }
+    footer { color: var(--muted); text-align: center; padding: 18px; font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <span class="eyebrow">VELOTRACK · PRIVACY</span>
+    <h1>Политика конфиденциальности</h1>
+    <p class="lead">VeloTrack — локальный велокомпьютер без аккаунта, рекламы и серверного хранилища поездок. Ниже точно описано, какие данные нужны приложению и что с ними происходит.</p>
+    <div class="chips">
+      <span class="chip">Без рекламы</span>
+      <span class="chip">Без аналитики</span>
+      <span class="chip">Без облачного аккаунта</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-title"><span class="number">01</span><h2>Кто отвечает за данные</h2></div>
+    <p>Настоящая политика относится к мобильному приложению <strong>VeloTrack</strong>.</p>
+    <p>Разработчик и оператор приложения: <strong>v1talityq</strong>. Контакт по вопросам конфиденциальности: <a href="mailto:v1talityq@email.com">v1talityq@email.com</a>.</p>
+    <p>VeloTrack работает без регистрации. У разработчика нет сервера, на котором хранятся профиль, история поездок или показания датчиков.</p>
+  </section>
+
+  <section>
+    <div class="section-title"><span class="number">02</span><h2>Какие данные обрабатываются</h2></div>
+    <div class="grid">
+      <div class="item"><h3>Профиль</h3><p>Имя, пол, возраст, вес и окружность колеса — для персонализации и расчёта калорий.</p></div>
+      <div class="item"><h3>Геолокация</h3><p>Точные координаты, время, высота и точность GPS — для маршрута, дистанции и скорости.</p></div>
+      <div class="item"><h3>Здоровье и тренировки</h3><p>Пульс, каденс, скорость, продолжительность, дистанция, расчётные калории и статистика.</p></div>
+      <div class="item"><h3>Датчики</h3><p>Название и идентификатор выбранного Bluetooth LE или ANT+ датчика, его роль и измерения.</p></div>
+      <div class="item"><h3>Настройки</h3><p>Тема, масштаб и порядок карточек, демо-режим и параметры интерфейса.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title"><span class="number">03</span><h2>Цели обработки</h2></div>
+    <ul>
+      <li>показывать текущие показатели и положение на карте;</li>
+      <li>записывать маршрут и формировать историю тренировок;</li>
+      <li>рассчитывать скорость, дистанцию, калории и статистику;</li>
+      <li>повторно подключать выбранные датчики;</li>
+      <li>создавать и восстанавливать зашифрованную резервную копию.</li>
+    </ul>
+    <p>Данные не используются для рекламы, поведенческой аналитики, профилирования, кредитных или страховых решений. VeloTrack не продаёт персональные данные.</p>
+  </section>
+
+  <section>
+    <div class="section-title"><span class="number">04</span><h2>GPS и работа в фоне</h2></div>
+    <p>Доступ к точной геолокации запрашивается средствами Android. При отказе GPS-трек не записывается; часть показателей может поступать от подключённых датчиков.</p>
+    <p>После явного нажатия «Начать тренировку» VeloTrack может продолжать получать геолокацию при выключенном экране или когда приложение свёрнуто. Это необходимо для непрерывной записи поездки. Android показывает постоянное уведомление. После завершения тренировки отслеживание прекращается.</p>
+  </section>
+
+  <section>
+    <div class="section-title"><span class="number">05</span><h2>Карта и OpenStreetMap</h2></div>
+    <p>Для отображения онлайн-карты приложение запрашивает по HTTPS картографические тайлы у OpenStreetMap Foundation (<code>tile.openstreetmap.org</code>).</p>
+    <p>OpenStreetMap технически может получить IP-адрес, время запроса, идентификатор приложения, параметры соединения и координаты запрошенного участка карты. Участок карты может косвенно указывать на местоположение пользователя. VeloTrack не передаёт OpenStreetMap имя, пульс, показания датчиков или базу истории поездок.</p>
+    <p>Загруженные участки карты кэшируются на устройстве. Кэш ограничен 250 МБ и может быть очищен пользователем.</p>
+    <p><a href="https://osmfoundation.org/wiki/Privacy_Policy">Политика конфиденциальности OpenStreetMap Foundation</a></p>
+  </section>
+
+  <section>
+    <div class="section-title"><span class="number">06</span><h2>Локальное хранение и резервные копии</h2></div>
+    <p>Профиль и привязки датчиков хранятся в локальных настройках приложения, а тренировки и GPS-точки — в локальной базе данных. Android Auto Backup и системный перенос данных между устройствами отключены.</p>
+    <p>Пользователь может вручную создать файл <code>.vtbackup</code>. Он шифруется AES-256-GCM; ключ выводится из пароля с помощью PBKDF2-HMAC-SHA256. Пароль приложением не сохраняется. Пользователь самостоятельно выбирает место сохранения файла.</p>
+  </section>
+
+  <section>
+    <div class="section-title"><span class="number">07</span><h2>Срок хранения и удаление</h2></div>
+    <ul>
+      <li>поездку и GPS-маршрут можно удалить из истории после подтверждения;</li>
+      <li>привязки датчиков и кэш карты удаляются в настройках;</li>
+      <li>очистка данных приложения или его удаление стирает локальную базу, профиль и настройки;</li>
+      <li>файлы <code>.vtbackup</code> удаляются пользователем отдельно из выбранного хранилища.</li>
+    </ul>
+    <p>Поскольку у VeloTrack нет аккаунта и серверного хранилища, у разработчика нет удалённой копии пользовательских данных и технической возможности удалить данные с телефона.</p>
+  </section>
+
+  <section>
+    <div class="section-title"><span class="number">08</span><h2>Разрешения Android</h2></div>
+    <div class="grid">
+      <div class="item"><h3>Местоположение</h3><p>GPS-маршрут, дистанция, скорость и положение на карте.</p></div>
+      <div class="item"><h3>Устройства поблизости</h3><p>Поиск и подключение Bluetooth-датчиков.</p></div>
+      <div class="item"><h3>Уведомления и фоновая служба</h3><p>Показ активной записи и стабильная работа GPS.</p></div>
+      <div class="item"><h3>Интернет</h3><p>Загрузка тайлов OpenStreetMap.</p></div>
+      <div class="item"><h3>Предотвращение сна</h3><p>Активный экран и устойчивая запись во время тренировки.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title"><span class="number">09</span><h2>Защита данных</h2></div>
+    <p>Локальные данные находятся во внутреннем хранилище приложения, изолированном средствами Android. Карта загружается по HTTPS. Резервные копии шифруются до передачи в выбранное пользователем хранилище.</p>
+    <p>Локальная база VeloTrack отдельно не шифруется, поэтому рекомендуется использовать блокировку экрана и актуальные обновления безопасности Android.</p>
+  </section>
+
+  <section>
+    <div class="section-title"><span class="number">10</span><h2>Медицинское ограничение и дети</h2></div>
+    <p>VeloTrack является фитнес-инструментом, а не медицинским изделием. Пульс, калории и другая статистика могут содержать погрешность и не предназначены для диагностики, лечения или экстренных решений.</p>
+    <p>Приложение не предназначено специально для детей младше 13 лет и сознательно не собирает их данные на сервере. Родителям и опекунам следует контролировать использование датчиков и геолокации несовершеннолетними.</p>
+  </section>
+
+  <section>
+    <div class="section-title"><span class="number">11</span><h2>Изменения и контакты</h2></div>
+    <p>Существенные изменения будут отражены в новой версии документа и приложения.</p>
+    <p><strong>Разработчик:</strong> v1talityq<br><strong>E-mail:</strong> <a href="mailto:v1talityq@email.com">v1talityq@email.com</a></p>
+  </section>
+
+  <footer>Дата вступления в силу и последнего обновления: 21 июня 2026 года.</footer>
+</main>
+</body>
+</html>
